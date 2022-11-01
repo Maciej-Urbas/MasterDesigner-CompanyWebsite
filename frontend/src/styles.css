@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+/* font-family: 'Titillium Web', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Judson&display=swap");
+/* font-family: 'Judson', serif; */
+.color_primary {
+  color: #78ba9e;
+}
