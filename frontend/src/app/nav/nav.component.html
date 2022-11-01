@@ -68,5 +68,44 @@
       class="nav-logo_logo"
       [class.nav-logo_logo-active]="isExpanded"
     />
+    <div class="nav-logo-ankars" [class.nav-logo-ankars-active]="isExpanded">
+      <a
+        class="nav-logo-ankars_item nav-logo-ankars_item1"
+        [class.nav-logo-ankars_item1-active2]="isExpanded2"
+        href=""
+        >STRONA GŁÓWNA</a
+      >
+
+      <div class="nav-logo-ankars-pair">
+        <a
+          class="nav-logo-ankars_item nav-logo-ankars_item2"
+          [class.nav-logo-ankars_item2-active2]="isExpanded2"
+          href=""
+          >OFERTA</a
+        >
+
+        <div class="nav-logo-ankars-arrow">
+          <button
+            class="nav-logo-ankars-arrow_arrow"
+            (click)="toggle2()"
+            [class.nav-logo-ankars-arrow_arrow-active2]="isExpanded2"
+          ></button>
+        </div>
+
+        <div
+          class="nav-logo-offer-items"
+          [class.nav-logo-offer-items-active2]="isExpanded2"
+        >
+          <a class="nav-logo-ankars_item" href="">STRONY INTERNETOWE</a>
+          <a class="nav-logo-ankars_item" href="">GRAFIKA</a>
+        </div>
+      </div>
+      <a
+        class="nav-logo-ankars_item nav-logo-ankars_item3"
+        [class.nav-logo-ankars_item3-active2]="isExpanded2"
+        href=""
+        >KONTAKT</a
+      >
+    </div>
   </div>
 </nav>
