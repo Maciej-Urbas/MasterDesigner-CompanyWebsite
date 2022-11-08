@@ -1,0 +1,55 @@
+<footer>
+  <div class="line"></div>
+
+  <div class="container">
+    <div class="left">
+      <div class="left-description">
+        Liczymy, że uda Nam się dojść do porozumienia, w którym obie strony
+        umowy będą zadowolone.
+      </div>
+
+      <img src="../../assets/logo.png" class="left-logo" />
+
+      <div class="left-signature">Maciej Urbaś & Daria Łopata &copy; 2022</div>
+    </div>
+
+    <div class="right">
+      <div class="right-title color_primary">SKONTAKTUJ SIĘ Z NAMI</div>
+
+      <div
+        class="right-messageForm"
+        formGroupName="messageForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <input
+          class="right-messageForm_small"
+          type="text"
+          maxlength="41"
+          formControlName="topic"
+        />
+
+        <input
+          class="right-messageForm_small"
+          type="text"
+          maxlength="16"
+          formControlName="phone"
+        />
+
+        <input
+          class="right-messageForm_small"
+          type="email"
+          maxlength="320"
+          formControlName="email"
+        />
+
+        <textarea
+          class="right-messageForm_large"
+          formControl="message"
+          maxlength="500"
+        ></textarea>
+
+        <button class="right-messageForm_submit" type="submit">Wyślij</button>
+      </div>
+    </div>
+  </div>
+</footer>

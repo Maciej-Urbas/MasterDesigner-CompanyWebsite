@@ -58,7 +58,7 @@ nav {
   z-index: 999;
 
   background: none;
-  background-size: contain;
+  background-size: cover;
   background-image: url("data:image/svg+xml,%3Csvg width='159' height='82' viewBox='0 0 159 82' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='26.3833' y1='40.5' x2='158.238' y2='40.5' stroke='black' stroke-opacity='0.5' stroke-width='15'/%3E%3Cline x1='0.0126953' y1='74.5' x2='158.238' y2='74.5' stroke='black' stroke-opacity='0.5' stroke-width='15'/%3E%3Cline x1='0.0126953' y1='7.5' x2='158.238' y2='7.5' stroke='black' stroke-opacity='0.5' stroke-width='15'/%3E%3C/svg%3E%0A");
 }
 .nav-content-button_button-active {

@@ -1,0 +1,255 @@
+footer {
+  width: 100%;
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9vw;
+
+  margin-top: 4.2vw;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Judson", serif;
+}
+
+.line {
+  width: clamp(min(140px), 75.833vw, max(1456px));
+  height: clamp(min(4px), 0.52vw, max(10px));
+
+  margin-left: 3vw;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  gap: 3vw;
+
+  width: 92%;
+
+  margin: auto;
+  margin-top: 7vw;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: 4vw;
+
+  align-items: center;
+
+  width: clamp(min(240px), 62.5vw, max(1200px));
+
+  background: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg width='771' height='1065' viewBox='0 0 771 1065' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='41' y='1019' width='968' height='688' transform='rotate(-90 41 1019)' fill='black' fill-opacity='0.3'/%3E%3Cpath d='M758 596L758 747C758 915.447 621.447 1052 453 1052V1052' stroke='%2378BA9E' stroke-opacity='0.4' stroke-width='25'/%3E%3Cpath d='M13 469V320C13 150.449 150.449 13 320 13V13' stroke='%2378BA9E' stroke-opacity='0.4' stroke-width='25'/%3E%3C/svg%3E%0A");
+}
+.left-description {
+  margin-top: 6vw;
+  padding: 0vw 4.4vw 0vw 5.6vw;
+
+  font-size: clamp(min(18px), 2.291vw, max(44px));
+}
+.left-logo {
+  margin-top: 6vw;
+  width: clamp(min(76.164px), 14.583vw, max(280px));
+}
+.left-signature {
+  position: absolute;
+  bottom: 0;
+
+  padding-bottom: 3.8vw;
+
+  font-size: clamp(min(13px), 1.25vw, max(24px));
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: -2vw;
+
+  width: clamp(min(240px), 47.864vw, max(919px));
+  height: clamp(min(258.541px), 51.562vw, max(990px));
+}
+.right-title {
+  font-size: clamp(min(26px), 5vw, max(96px)) !important;
+  font-weight: 600;
+}
+
+.right-messageForm {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: clamp(min(16px), 2.083vw, max(40px));
+
+  width: 100%;
+}
+.right-messageForm_small {
+  width: 100%;
+  height: clamp(min(20px), 4.791vw, max(92px));
+
+  margin-top: 2vw;
+  padding-left: 1vw;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+  overflow-x: scroll;
+
+  border: solid clamp(min(2px), 0.156vw, max(3px));
+  outline: none;
+  background: none;
+}
+.right-messageForm_large {
+  width: 100%;
+  height: clamp(min(77.173px), 18.489vw, max(355px));
+
+  margin-top: 2vw;
+  padding-left: 1vw;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+  border: solid clamp(min(2px), 0.156vw, max(3px));
+  outline: none;
+  background: none;
+}
+.right-messageForm_submit {
+  width: clamp(min(120px), 16.77vw, max(322px));
+  height: clamp(min(42.118px), 5.885vw, max(113px));
+
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(min(26px), 3.385vw, max(65px));
+
+  margin-top: 2vw;
+
+  border: solid clamp(min(2px), 0.156vw, max(3px));
+  background: none;
+}
+
+@media screen and (min-width: 2px) and (max-width: 776px) {
+  footer {
+  }
+
+  .line {
+    width: 94%;
+    height: clamp(min(2px), 0.515vw, max(4px));
+
+    margin: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100%;
+    height: clamp(min(113.388px), 43.611vw, max(338.422px));
+
+    background-image: none;
+    background-color: blueviolet;
+
+    margin-top: clamp(min(2px), 10.824vw, max(84px));
+
+    background: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='337' height='158' viewBox='0 0 337 158' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M334 70L334 92C334 126.794 305.794 155 271 155V155' stroke='%2378BA9E' stroke-opacity='0.4' stroke-width='5'/%3E%3Crect x='11' y='10' width='315' height='135' fill='%2307070D' fill-opacity='0.3'/%3E%3Cpath d='M3 88V66C3 31.2061 31.2061 3 66 3V3' stroke='%2378BA9E' stroke-opacity='0.4' stroke-width='5'/%3E%3C/svg%3E%0A");
+  }
+  .left-description {
+    font-size: clamp(min(10px), 4.123vw, max(32px));
+    width: 47vw;
+
+    padding: 0;
+    margin: 0;
+    margin-top: -6vw;
+  }
+  .left-logo {
+    width: 19.547vw;
+    height: 18.725vw;
+
+    padding: 0;
+    margin: 0;
+    margin-top: -5.6vw;
+  }
+  .left-signature {
+    font-size: clamp(min(7px), 2.835vw, max(22px));
+
+    margin-bottom: 2vw;
+  }
+
+  /* Margines dla "Wizytowki", bo narazie nie mam innego pomyslu */
+  @media screen and (min-width: 420px) and (max-width: 460px) {
+    .left {
+      margin-top: max(26px);
+    }
+  }
+  @media screen and (min-width: 370px) and (max-width: 419px) {
+    .left {
+      margin-top: 12px;
+    }
+  }
+  @media screen and (min-width: 2px) and (max-width: 369px) {
+    .left {
+      margin-top: -2px;
+    }
+  }
+
+  .right-title {
+    font-size: clamp(min(16px), 5.555vw, max(46px)) !important;
+    margin-top: -1vw;
+  }
+  .right-messageForm {
+    font-size: clamp(min(12px), 2.577vw, max(20px));
+  }
+  .right-messageForm_small {
+    margin-top: 3vw;
+  }
+  .right-messageForm_large {
+    margin-top: 3vw;
+  }
+  .right-messageForm_submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: clamp(min(90px), 24.6vw, max(190.896px));
+    height: clamp(min(28.287px), 7.731vw, max(60px));
+
+    font-size: clamp(min(14px), 4.188vw, max(32.5px));
+    padding-top: -2vw;
+
+    margin-top: 3vw;
+
+    border: solid clamp(min(2px), 0.156vw, max(3px));
+    background: none;
+  }
+}
+
+.right {
+  width: 100%;
+}
+.right-messageForm {
+  width: 82%;
+}
