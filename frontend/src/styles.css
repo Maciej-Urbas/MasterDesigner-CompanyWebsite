@@ -7,3 +7,27 @@
 .color_primary {
   color: #78ba9e;
 }
+
+.title {
+  font-size: clamp(min(15.625px), 5.208vw, max(100px));
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 6vw;
+}
+
+.line {
+  width: clamp(min(140px), 75.833vw, max(1456px));
+  height: clamp(min(4px), 0.52vw, max(10px));
+
+  margin-left: 3vw;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 2px) and (max-width: 776px) {
+  .line {
+    width: 94%;
+    height: clamp(min(2px), 0.515vw, max(4px));
+
+    margin: auto;
+  }
+}

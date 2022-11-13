@@ -1,4 +1,5 @@
 footer {
+  max-width: 1920px;
   width: 100%;
   position: relative;
 
@@ -14,14 +15,14 @@ footer {
   font-family: "Judson", serif;
 }
 
-.line {
+/* .line {
   width: clamp(min(140px), 75.833vw, max(1456px));
   height: clamp(min(4px), 0.52vw, max(10px));
 
   margin-left: 3vw;
 
   background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .container {
   display: flex;
@@ -147,12 +148,12 @@ footer {
   footer {
   }
 
-  .line {
+  /* .line {
     width: 94%;
     height: clamp(min(2px), 0.515vw, max(4px));
 
     margin: auto;
-  }
+  } */
 
   .container {
     display: flex;

@@ -1,0 +1,36 @@
+main {
+  max-width: 1920px;
+  width: 100%;
+  height: 140vw;
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../assets/monstera.png");
+
+  margin-bottom: -36vw;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blocks_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: clamp(min(148.551px), 57.135vw, max(1097px));
+  height: clamp(min(45.5px), 17.5vw, max(336px));
+
+  margin-top: 8vw;
+
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(min(13px), 5vw, max(96px));
+  text-align: center;
+
+  border: solid black 2px;
+}
