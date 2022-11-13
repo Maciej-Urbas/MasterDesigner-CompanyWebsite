@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { GraphicsComponent } from './graphics/graphics.component';
 import { RouterModule } from '@angular/router';
+import { WebsitesComponent } from './websites/websites.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,14 @@ import { RouterModule } from '@angular/router';
     NavComponent,
     FooterComponent,
     GraphicsComponent,
+    WebsitesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: 'oferta/grafika', component: GraphicsComponent },
+      { path: 'oferta/strony', component: WebsitesComponent },
     ]),
   ],
   providers: [],
