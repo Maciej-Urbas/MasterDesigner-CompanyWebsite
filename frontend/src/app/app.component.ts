@@ -29,7 +29,16 @@ export class AppComponent {
           ?.classList.remove('show-scroll-to-top_button');
       }
     }
-
     // return 0;
+  }
+
+  scrollTop() {
+    setTimeout(() => {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }, 100);
   }
 }

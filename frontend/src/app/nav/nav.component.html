@@ -97,13 +97,13 @@
           [class.nav-logo-offer-items-active2]="isExpanded2"
         >
           <a class="nav-logo-ankars_item" href="">STRONY INTERNETOWE</a>
-          <a class="nav-logo-ankars_item" href="grafika">GRAFIKA</a>
+          <a class="nav-logo-ankars_item" href="oferta/grafika">GRAFIKA</a>
         </div>
       </div>
       <a
         class="nav-logo-ankars_item nav-logo-ankars_item3"
         [class.nav-logo-ankars_item3-active2]="isExpanded2"
-        href=""
+        (click)="goToKontakt()"
         >KONTAKT</a
       >
     </div>

@@ -18,7 +18,9 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([{ path: 'grafika', component: GraphicsComponent }]),
+    RouterModule.forRoot([
+      { path: 'oferta/grafika', component: GraphicsComponent },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent],

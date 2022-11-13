@@ -25,5 +25,21 @@ export class NavComponent implements OnInit {
     this.isExpanded2 = !this.isExpanded2;
   }
 
+  goToKontakt() {
+    this.toggle();
+
+    const footerMessageForm =
+      document.getElementsByClassName('right-messageForm');
+    let ss = footerMessageForm[0].getBoundingClientRect().top;
+
+    setTimeout(() => {
+      window.scroll({
+        top: ss,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }, 400);
+  }
+
   ngOnInit(): void {}
 }
