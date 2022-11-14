@@ -11,6 +11,8 @@
 .title {
   font-size: clamp(min(15.625px), 5.208vw, max(100px));
   font-family: "Titillium Web", sans-serif;
+
+  margin-top: 4vw;
   margin-left: 6vw;
 }
 
@@ -24,10 +26,16 @@
 }
 
 @media screen and (min-width: 2px) and (max-width: 776px) {
+  .title {
+    text-align: center;
+    margin-left: 0;
+  }
+
   .line {
-    width: 94%;
+    width: 86%;
     height: clamp(min(2px), 0.515vw, max(4px));
 
     margin: auto;
+    margin-top: 1vw;
   }
 }

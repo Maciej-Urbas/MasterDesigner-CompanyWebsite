@@ -1,0 +1,143 @@
+main {
+  max-width: 1920px;
+  width: 100%;
+
+  font-family: "Titillium Web", sans-serif;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 8vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  width: 53.281vw;
+  height: 32vw;
+
+  position: relative;
+
+  margin-right: 4vw;
+}
+
+.lower-title {
+  font-size: clamp(min(24px), 3.333vw, max(64px));
+}
+
+.paragraph {
+  text-align: center;
+  font-size: clamp(min(12px), 2.083vw, max(40px));
+
+  margin-top: 2vw;
+}
+
+.buttonik {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: clamp(min(85.854px), 33.02vw, max(634px));
+  height: clamp(min(18.755px), 7.213vw, max(138.5px));
+
+  position: absolute;
+  bottom: 1vw;
+
+  text-decoration: none;
+  color: black;
+  font-size: clamp(min(12px), 3.333vw, max(64px));
+
+  border: solid clamp(min(2px), 0.26vw, max(5px));
+}
+
+.laptop {
+  width: clamp(min(98.583px), 37.916vw, max(728px));
+  height: clamp(min(50.295px), 19.344vw, max(371.41px));
+  margin-left: 2vw;
+}
+
+.laptop-small {
+  display: none;
+}
+
+.dog {
+  width: clamp(min(48.885px), 18.802vw, max(361px));
+  height: clamp(min(82.333px), 31.666vw, max(608px));
+  margin-left: 10vw;
+}
+
+.dog-small {
+  display: none;
+}
+
+@media screen and (min-width: 2px) and (max-width: 776px) {
+  .group {
+    justify-content: center;
+  }
+
+  .lower-title {
+    width: 100vw;
+    text-align: center;
+
+    font-size: clamp(min(16px), 4.649vw, max(36px));
+  }
+
+  .content {
+    margin-right: 0;
+    height: 60vw;
+  }
+
+  .content-smallDogo {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    height: 78vw;
+  }
+
+  .paragraph {
+    text-align: center;
+    font-size: clamp(min(10px), 3.608vw, max(28px));
+    width: 100vw;
+
+    margin-top: 3vw;
+  }
+
+  .buttonik {
+    width: clamp(min(114.4px), 44vw, max(341.44px));
+    height: clamp(min(24.123px), 9.278vw, max(72px));
+
+    font-size: clamp(min(12px), 4.649vw, max(36px));
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  .laptop-small {
+    display: flex;
+
+    margin-top: 3vw;
+
+    width: clamp(min(98.583px), 37.916vw, max(728px));
+    height: clamp(min(50.295px), 19.344vw, max(371.41px));
+  }
+
+  .dog {
+    display: none;
+  }
+
+  .dog-small {
+    display: flex;
+
+    margin-top: 3vw;
+
+    width: clamp(min(48.885px), 18.802vw, max(361px));
+    height: clamp(min(82.333px), 31.666vw, max(608px));
+  }
+}

@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { GraphicsComponent } from './graphics/graphics.component';
 import { RouterModule } from '@angular/router';
 import { WebsitesComponent } from './websites/websites.component';
+import { OfferComponent } from './offer/offer.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { WebsitesComponent } from './websites/websites.component';
     FooterComponent,
     GraphicsComponent,
     WebsitesComponent,
+    OfferComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
+      { path: 'oferta', component: OfferComponent },
       { path: 'oferta/grafika', component: GraphicsComponent },
       { path: 'oferta/strony', component: WebsitesComponent },
     ]),
