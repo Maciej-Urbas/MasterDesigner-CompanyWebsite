@@ -246,7 +246,7 @@ nav {
 }
 .nav-logo-offer-items {
   position: absolute;
-  top: 15.2vw;
+  top: clamp(min(44px), 15.6vw, max(291.84px));
   left: 100vw;
 
   width: 0;
