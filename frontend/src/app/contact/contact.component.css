@@ -1,0 +1,84 @@
+section {
+  max-width: 1920px;
+  width: 100%;
+
+  font-family: "Titillium Web", sans-serif;
+}
+
+.contact-pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  width: 79.531vw;
+  height: 31.927vw;
+
+  margin: auto;
+  margin-top: 6vw;
+
+  border: solid clamp(min(2px), 0.26vw, max(5px)) rgba(00, 00, 00, 0.5);
+}
+.contact-pair_maciek2 {
+  width: 13.484vw;
+
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+}
+.contact-pair_opis {
+  width: 52.916vw;
+
+  margin-left: 20vw;
+
+  font-size: clamp(min(9px), 3.333vw, max(64px));
+  text-align: center;
+}
+
+.contact-pair2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 2vw;
+
+  width: 80%;
+
+  margin: auto;
+  margin-top: 6vw;
+  margin-left: 16vw;
+}
+.pair2_down {
+  margin-top: 6vw;
+}
+.contact-pair2_phone {
+  width: clamp(min(30px), 6.718vw, max(129px));
+  height: clamp(min(25px), 6.875vw, max(139px));
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg width='129' height='139' viewBox='0 0 129 139' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M41.0466 36.293L31.6803 5.00646C31.4876 4.36278 30.9129 3.92033 30.2658 4.01203C25.8032 4.64441 15.4795 8.71712 10.3599 17.5921C3.36115 29.7247 -0.100239 33.5641 6.6007 67.3511C13.3016 101.138 72.395 136 84.0338 136C88.0544 136 104.434 135.693 112.512 128.782C122.599 120.152 125.676 117.243 125.998 111.304C126.029 110.723 125.708 110.186 125.205 109.922L99.4335 96.3986C98.8806 96.1085 98.2101 96.1963 97.7826 96.6598C92.8167 102.045 87.7515 114.012 77.816 110.353C73.45 108.744 51.7572 91.8859 41.4391 81.8901C41.3668 81.8201 41.3073 81.7494 41.2497 81.6662C36.9198 75.4076 24.7428 61.8555 26.644 50.8039C26.7 50.4782 26.8709 50.187 27.1131 49.9702L40.5995 37.9062C41.0454 37.5074 41.2207 36.8746 41.0466 36.293Z' fill='%2378BA9E' stroke='%2378BA9E' stroke-width='6'/%3E%3C/svg%3E%0A");
+}
+.contact-pair2_email {
+  width: clamp(min(30px), 7.604vw, max(146px));
+  height: clamp(min(16px), 4.479vw, max(86px));
+
+  margin-left: -0.8vw;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg width='148' height='88' viewBox='0 0 148 88' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 87V1H147V87H1Z' fill='%2378BA9E'/%3E%3Cpath d='M1 1V87H147V1M1 1H147M1 1L73.1889 40.13L147 1' stroke='%23CACACA' stroke-width='2'/%3E%3C/svg%3E%0A");
+}
+.contact-pair2_text {
+  font-weight: 600;
+  font-size: clamp(min(12px), 3.333vw, max(64px));
+}
+
+@media screen and (min-width: 2px) and (max-width: 776px) {
+  .contact-pair2 {
+    width: 66vw;
+    margin-left: 20vw;
+  }
+}
