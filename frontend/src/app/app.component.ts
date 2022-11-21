@@ -8,6 +8,8 @@ import { Component, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'frontend';
 
+  key = 'themeMode';
+
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll() {
     let navlogoHeightValue;

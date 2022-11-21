@@ -23,7 +23,11 @@
 
     <div class="nav-content-switch">
       <label class="nav-content-switch_label">
-        <input class="nav-content-switch_checkbox" type="checkbox" />
+        <input
+          class="nav-content-switch_checkbox"
+          type="checkbox"
+          (change)="setKeyValueOfLocalStorage()"
+        />
         <span class="nav-content-switch_slider"></span>
       </label>
 
@@ -105,7 +109,7 @@
       <a
         class="nav-logo-ankars_item nav-logo-ankars_item3"
         [class.nav-logo-ankars_item3-active2]="isExpanded2"
-        (click)="goToKontakt()"
+        href="/kontakt"
         >KONTAKT</a
       >
     </div>
