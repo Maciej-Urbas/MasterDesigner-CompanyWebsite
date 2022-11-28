@@ -17,10 +17,7 @@ export class AppComponent {
     const navlogoHeight = document.querySelector('.nav-logo');
     navlogoHeightValue = navlogoHeight?.clientHeight;
 
-    // console.log(navlogoHeightValue);
-
     if (navlogoHeightValue != undefined) {
-      console.log(navlogoHeightValue);
       if (window.scrollY >= navlogoHeightValue - 10) {
         document
           .querySelector('.scroll-to-top_button')
@@ -31,7 +28,23 @@ export class AppComponent {
           ?.classList.remove('show-scroll-to-top_button');
       }
     }
-    // return 0;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    const windowWidth = window.innerWidth;
+    console.log(windowWidth);
+    if (localStorage.getItem('themeMode') == 'dark') {
+      if (document.querySelector('.left') != null) {
+        if (window.innerWidth > 776) {
+          document.querySelector('.left')?.classList.remove('left-dark-small');
+          document.querySelector('.left')?.classList.add('left-dark-large');
+        } else {
+          document.querySelector('.left')?.classList.remove('left-dark-large');
+          document.querySelector('.left')?.classList.add('left-dark-small');
+        }
+      }
+    }
   }
 
   scrollTop() {
@@ -50,8 +63,6 @@ export class AppComponent {
       '.nav-content-switch_checkbox'
     ) as HTMLInputElement | null;
 
-    // console.log(switchCheckbox?.ariaChecked);
-    // switchCheckbox.checked = 'checked';
     if (localStorage.getItem('themeMode') == 'dark') {
       console.log('darkMode');
 
@@ -60,43 +71,12 @@ export class AppComponent {
       }
 
       this.addCssClassName('.line-up', 'line-up-dark');
-
-      // this.swapCssProperty(
-      //   '--lightBackgroundOne',
-      //   this.getCssPropertyValue('--darkBackgroundOne')
-      // );
-      // this.swapCssProperty(
-      //   '--lightBackgroundTwo',
-      //   this.getCssPropertyValue('--darkBackgroundTwo')
-      // );
-
-      // this.swapCssProperty(
-      //   '--lightTextColor',
-      //   this.getCssPropertyValue('--blackTextColor')
-      // );
-
-      // this.swapCssProperty(
-      //   '--lightSwitchBulb',
-      //   this.getCssPropertyValue('--darkSwitchBulb')
-      // );
-
-      // this.swapCssProperty(
-      //   '--lightNavLogo',
-      //   this.getCssPropertyValue('--darkNavLogo')
-      // );
-
-      // this.swapCssProperty(
-      //   '--lightNavMenuButton',
-      //   this.getCssPropertyValue('--darkNavMenuButton')
-      // );
     } else {
       console.log('lightMode');
 
       if (switchCheckbox != null) {
         switchCheckbox.checked = false;
       }
-
-      // this.removeCssClassName('.app', 'app-dark');
 
       // this.swapCssProperty(
       //   '--darkBackgroundOne',
@@ -129,92 +109,9 @@ export class AppComponent {
     }
   }
 
-  // changeSiteDisplayTheme() {
-  //   const r = document.querySelector(':root');
-  //   const switchCheckbox = document.querySelector(
-  //     '.nav-content-switch_checkbox'
-  //   ) as HTMLInputElement | null;
-
-  //   // console.log(switchCheckbox?.ariaChecked);
-  //   // switchCheckbox.checked = 'checked';
-
-  //   if (localStorage.getItem('themeMode') == 'dark') {
-  //     console.log('darkMode');
-
-  //     if (switchCheckbox != null) {
-  //       switchCheckbox.checked = true;
-  //     }
-
-  //     this.swapCssProperty(
-  //       '--lightBackgroundOne',
-  //       this.getCssPropertyValue('--darkBackgroundOne')
-  //     );
-  //     this.swapCssProperty(
-  //       '--lightBackgroundTwo',
-  //       this.getCssPropertyValue('--darkBackgroundTwo')
-  //     );
-
-  //     this.swapCssProperty(
-  //       '--lightTextColor',
-  //       this.getCssPropertyValue('--blackTextColor')
-  //     );
-  //   } else {
-  //     console.log('lightMode');
-
-  //     if (switchCheckbox != null) {
-  //       switchCheckbox.checked = false;
-  //     }
-
-  //     this.swapCssProperty(
-  //       '--darkBackgroundOne',
-  //       this.getCssPropertyValue('--lightBackgroundOne')
-  //     );
-  //     this.swapCssProperty(
-  //       '--darkBackgroundTwo',
-  //       this.getCssPropertyValue('--lightBackgroundTwo')
-  //     );
-
-  //     this.swapCssProperty(
-  //       '--blackTextColor',
-  //       this.getCssPropertyValue('--lightTextColor')
-  //     );
-  //   }
-  // }
-
-  // getCssPropertyValue(cssPropertyName: string) {
-  //   const r = document.querySelector(':root');
-
-  //   if (r != undefined) {
-  //     const rs = getComputedStyle(r);
-
-  //     return rs.getPropertyValue(cssPropertyName);
-  //   } else {
-  //     return '0';
-  //   }
-  // }
-
-  // swapCssProperty(actualCssPropertyName: string, newCssPropertyName: string) {
-  //   const r = document.querySelector(':root');
-
-  //   if (r != undefined) {
-  //     const rs = getComputedStyle(r);
-
-  //     document.documentElement.style.setProperty(
-  //       actualCssPropertyName,
-  //       newCssPropertyName
-  //     );
-  //   }
-  // }
-
   addCssClassName(cssClassName: string, addedClassName: string) {
     if (document.querySelector(cssClassName) != null) {
       document.querySelector(cssClassName)?.classList.add(addedClassName);
     }
   }
-
-  // removeCssClassName(cssClassName: string, addedClassName: string) {
-  //   if (document.querySelector(cssClassName) != null) {
-  //     document.querySelector(cssClassName)?.classList.remove(addedClassName);
-  //   }
-  // }
 }

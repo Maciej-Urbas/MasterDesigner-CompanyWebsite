@@ -84,7 +84,66 @@ export class NavComponent implements OnInit {
         'nav-content-switch-bulb-dark'
       );
 
-      this.addCssClassName('.frame', 'frame-dark');
+      this.addCssClassName('.up_maciek', 'up_maciek-dark');
+      this.addCssClassName('.down_daria', 'down_daria-dark');
+
+      // this.addCssClassName('.left', 'left-dark');
+
+      this.addCssClassName('.left-logo', 'left-logo-dark');
+
+      this.addCssClassName(
+        '.right-messageForm_small1',
+        'right-messageForm_small1-dark'
+      );
+      this.addCssClassName(
+        '.right-messageForm_small2',
+        'right-messageForm_small2-dark'
+      );
+      this.addCssClassName(
+        '.right-messageForm_small3',
+        'right-messageForm_small3-dark'
+      );
+
+      this.addCssClassName(
+        '.right-messageForm_large',
+        'right-messageForm_large-dark'
+      );
+
+      this.addCssClassName(
+        '.right-messageForm_submit',
+        'right-messageForm_submit-dark'
+      );
+
+      const maciej = document.querySelector(
+        '.up_maciek'
+      ) as HTMLImageElement | null;
+      if (maciej != null) {
+        maciej.src = '../../assets/maciek-dark.png';
+      }
+      const daria = document.querySelector(
+        '.down_daria'
+      ) as HTMLImageElement | null;
+      if (daria != null) {
+        daria.src = '../../assets/daria-dark.png';
+      }
+      const maciejSmall = document.querySelector(
+        '.up_maciek-small'
+      ) as HTMLImageElement | null;
+      if (maciejSmall != null) {
+        maciejSmall.src = '../../assets/maciek-dark.png';
+      }
+      const dariaSmall = document.querySelector(
+        '.down_daria-small'
+      ) as HTMLImageElement | null;
+      if (dariaSmall != null) {
+        dariaSmall.src = '../../assets/daria-dark.png';
+      }
+
+      if (window.innerWidth > 776) {
+        this.addCssClassName('.left', 'left-dark-large');
+      } else {
+        this.addCssClassName('.left', 'left-dark-small');
+      }
 
       localStorage.setItem('themeMode', 'dark');
     } else {
@@ -111,27 +170,67 @@ export class NavComponent implements OnInit {
         'nav-content-switch-bulb-dark'
       );
 
-      this.removeCssClassName('.frame', 'frame-dark');
+      this.removeCssClassName('.up_maciek', 'up_maciek-dark');
+      this.removeCssClassName('.down_daria', 'down_daria-dark');
+
+      // this.removeCssClassName('.left', 'left-dark');
+
+      this.removeCssClassName('.left-logo', 'left-logo-dark');
+
+      this.removeCssClassName(
+        '.right-messageForm_small1',
+        'right-messageForm_small1-dark'
+      );
+      this.removeCssClassName(
+        '.right-messageForm_small2',
+        'right-messageForm_small2-dark'
+      );
+      this.removeCssClassName(
+        '.right-messageForm_small3',
+        'right-messageForm_small3-dark'
+      );
+
+      this.removeCssClassName(
+        '.right-messageForm_large',
+        'right-messageForm_large-dark'
+      );
+
+      this.removeCssClassName(
+        '.right-messageForm_submit',
+        'right-messageForm_submit-dark'
+      );
+
+      const maciej = document.querySelector(
+        '.up_maciek'
+      ) as HTMLImageElement | null;
+      if (maciej != null) {
+        maciej.src = '../../assets/maciek.png';
+      }
+      const daria = document.querySelector(
+        '.down_daria'
+      ) as HTMLImageElement | null;
+      if (daria != null) {
+        daria.src = '../../assets/daria.png';
+      }
+      const maciejSmall = document.querySelector(
+        '.up_maciek-small'
+      ) as HTMLImageElement | null;
+      if (maciejSmall != null) {
+        maciejSmall.src = '../../assets/maciek.png';
+      }
+      const dariaSmall = document.querySelector(
+        '.down_daria-small'
+      ) as HTMLImageElement | null;
+      if (dariaSmall != null) {
+        dariaSmall.src = '../../assets/daria.png';
+      }
+
+      this.removeCssClassName('.left', 'left-dark-large');
+      this.removeCssClassName('.left', 'left-dark-small');
 
       localStorage.setItem('themeMode', 'light');
     }
   }
-
-  // goToKontakt() {
-  //   this.toggle();
-
-  //   const footerMessageForm =
-  //     document.getElementsByClassName('right-messageForm');
-  //   let ss = footerMessageForm[0].getBoundingClientRect().top;
-
-  //   setTimeout(() => {
-  //     window.scroll({
-  //       top: ss,
-  //       left: 0,
-  //       behavior: 'smooth',
-  //     });
-  //   }, 400);
-  // }
 
   ngOnInit(): void {
     if (localStorage.getItem('themeMode') == 'light') {
