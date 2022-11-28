@@ -8,6 +8,10 @@
   color: #78ba9e;
 }
 
+::ng-deep :root {
+  --lineUpBackground: 0, 0, 0;
+}
+
 .title {
   font-size: clamp(min(15.625px), 5.208vw, max(100px));
   font-family: "Titillium Web", sans-serif;
@@ -22,7 +26,27 @@
 
   margin-left: 3vw;
 
+  transition: 0.4s;
+
   background-color: rgba(0, 0, 0, 0.5);
+}
+.line-up {
+  width: clamp(min(140px), 75.833vw, max(1456px));
+  height: clamp(min(4px), 0.52vw, max(10px));
+
+  margin-left: 3vw;
+
+  transition: 0.4s;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.line-dark {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.line-up-dark {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 @media screen and (min-width: 2px) and (max-width: 776px) {
@@ -32,7 +56,14 @@
   }
 
   .line {
-    width: 86%;
+    width: 86vw;
+    height: clamp(min(2px), 0.515vw, max(4px));
+
+    margin: auto;
+    margin-top: 1vw;
+  }
+  .line-up {
+    width: 86vw;
     height: clamp(min(2px), 0.515vw, max(4px));
 
     margin: auto;

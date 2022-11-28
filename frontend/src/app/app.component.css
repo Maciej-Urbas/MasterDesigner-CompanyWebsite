@@ -1,22 +1,39 @@
-body {
-  max-width: 1920px;
+::ng-deep :root {
+  --lightBackgroundOne: 217, 217, 217;
+  --lightBackgroundTwo: 255, 255, 255;
+
+  --darkBackgroundOne: 0, 0, 0;
+  --darkBackgroundTwo: 48, 48, 48;
+
+  --lightTextColor: black;
+  --blackTextColor: white;
+}
+
+.app {
+  /* max-width: 1920px; */
   width: 100%;
 
   margin: auto;
-  padding: 0;
+
+  transition: 0.4s;
 
   position: absolute;
   top: 0;
   left: 0;
 
-  background: rgb(2, 0, 36);
-  background: linear-gradient(0deg, #d9d9d9 0%, #ffffff 100%);
+  color: var(--lightTextColor);
+
+  /* background: rgb(var(--darkBackgroundOne)); */
+  background: linear-gradient(
+    0deg,
+    rgba(var(--lightBackgroundOne), 1),
+    rgba(var(--lightBackgroundTwo), 1)
+  );
 }
 .scroll-to-top_button {
   width: clamp(min(13px), 5vw, max(96px));
   height: clamp(min(15.43px), 5.937vw, max(114px));
 
-  /* display: none; */
   opacity: 0;
 
   position: fixed;
@@ -26,7 +43,7 @@ body {
   padding: 0;
   pointer-events: none;
 
-  transition: 400ms;
+  transition: 0.4s;
   z-index: 999;
 
   border: none;
@@ -35,7 +52,20 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='96' height='114' viewBox='0 0 96 114' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='48.5' y1='107.5' x2='48.5' y2='40.5' stroke='black' stroke-opacity='0.5' stroke-width='13' stroke-linecap='round'/%3E%3Cpath d='M52.5962 2.40381C50.0578 -0.134602 45.9422 -0.134602 43.4038 2.40381L2.03806 43.7696C-0.500349 46.308 -0.500349 50.4235 2.03806 52.9619C4.57647 55.5003 8.69204 55.5003 11.2304 52.9619L48 16.1924L84.7696 52.9619C87.308 55.5003 91.4235 55.5003 93.9619 52.9619C96.5003 50.4235 96.5003 46.308 93.9619 43.7696L52.5962 2.40381ZM54.5 8V7H41.5V8H54.5Z' fill='black' fill-opacity='0.5'/%3E%3C/svg%3E%0A");
 }
 .show-scroll-to-top_button {
-  /* display: block; */
   opacity: 1;
   pointer-events: all;
+}
+
+.app-dark {
+  color: var(--blackTextColor);
+
+  background: linear-gradient(
+    0deg,
+    rgba(var(--darkBackgroundOne), 1),
+    rgba(var(--darkBackgroundTwo), 1)
+  );
+}
+
+.scroll-to-top_button-dark {
+  background-image: url("data:image/svg+xml,%3Csvg width='96' height='114' viewBox='0 0 96 114' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='48.5' y1='107.5' x2='48.5' y2='40.5' stroke='white' stroke-width='13' stroke-linecap='round'/%3E%3Cpath d='M52.5962 2.40381C50.0578 -0.134602 45.9422 -0.134602 43.4038 2.40381L2.03806 43.7696C-0.500349 46.308 -0.500349 50.4235 2.03806 52.9619C4.57647 55.5003 8.69204 55.5003 11.2304 52.9619L48 16.1924L84.7696 52.9619C87.308 55.5003 91.4235 55.5003 93.9619 52.9619C96.5003 50.4235 96.5003 46.308 93.9619 43.7696L52.5962 2.40381ZM54.5 8V7H41.5V8H54.5Z' fill='white'/%3E%3C/svg%3E%0A");
 }
