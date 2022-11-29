@@ -14,6 +14,22 @@ export class GraphicsComponent implements OnInit {
       if (a != null) {
         a.classList.add('line-up-dark');
       }
+
+      if (document.querySelector('.blocks_item5') != null) {
+        document
+          .querySelector('.blocks_item5')
+          ?.classList.add('blocks_item-dark');
+      }
+      if (document.querySelector('.blocks_item6') != null) {
+        document
+          .querySelector('.blocks_item6')
+          ?.classList.add('blocks_item-dark');
+      }
+      if (document.querySelector('.blocks_item7') != null) {
+        document
+          .querySelector('.blocks_item7')
+          ?.classList.add('blocks_item-dark');
+      }
     }
   }
 }

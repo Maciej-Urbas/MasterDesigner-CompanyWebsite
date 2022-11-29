@@ -33,3 +33,7 @@ main {
 
   border: solid black 2px;
 }
+
+.blocks_item-dark {
+  border-color: white;
+}

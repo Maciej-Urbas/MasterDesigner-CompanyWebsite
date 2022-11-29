@@ -17,7 +17,7 @@
     <div class="right">
       <div class="right-title color_primary">SKONTAKTUJ SIĘ Z NAMI</div>
 
-      <div
+      <form
         class="right-messageForm"
         formGroupName="messageForm"
         (ngSubmit)="onSubmit()"
@@ -26,31 +26,35 @@
           class="right-messageForm_small right-messageForm_small1"
           type="text"
           maxlength="41"
-          formControlName="topic"
+          placeholder="Imie"
+          formControlName="name"
         />
 
         <input
           class="right-messageForm_small right-messageForm_small2"
           type="text"
           maxlength="16"
-          formControlName="phone"
+          placeholder="Temat"
+          formControlName="topic"
         />
 
         <input
           class="right-messageForm_small right-messageForm_small3"
           type="email"
           maxlength="320"
+          placeholder="Email"
           formControlName="email"
         />
 
         <textarea
           class="right-messageForm_large"
-          formControl="message"
           maxlength="500"
+          placeholder="Wiadomość"
+          formControl="message"
         ></textarea>
 
         <button class="right-messageForm_submit" type="submit">Wyślij</button>
-      </div>
+      </form>
     </div>
   </div>
 </footer>

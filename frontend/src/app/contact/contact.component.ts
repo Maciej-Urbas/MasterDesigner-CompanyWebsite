@@ -14,6 +14,12 @@ export class ContactComponent implements OnInit {
       if (a != null) {
         a.classList.add('line-up-dark');
       }
+
+      if (document.querySelector('.contact-pair') != null) {
+        document
+          .querySelector('.contact-pair')
+          ?.classList.add('contact-pair-dark');
+      }
     }
   }
 }

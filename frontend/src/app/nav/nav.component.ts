@@ -139,11 +139,38 @@ export class NavComponent implements OnInit {
         dariaSmall.src = '../../assets/daria-dark.png';
       }
 
+      const laptop = document.querySelector(
+        '.laptop'
+      ) as HTMLImageElement | null;
+      if (laptop != null) {
+        laptop.src = '../../assets/laptop-dark.png';
+      }
+      const laptopSmall = document.querySelector(
+        '.laptop-small'
+      ) as HTMLImageElement | null;
+      if (laptopSmall != null) {
+        laptopSmall.src = '../../assets/laptop-dark.png';
+      }
+
       if (window.innerWidth > 776) {
         this.addCssClassName('.left', 'left-dark-large');
       } else {
         this.addCssClassName('.left', 'left-dark-small');
       }
+
+      this.addCssClassName('.buttonik1', 'buttonik1-dark');
+      this.addCssClassName('.buttonik2', 'buttonik2-dark');
+
+      this.addCssClassName('.contact-pair', 'contact-pair-dark');
+
+      this.addCssClassName('.blocks_item1', 'blocks_item-dark');
+      this.addCssClassName('.blocks_item2', 'blocks_item-dark');
+      this.addCssClassName('.blocks_item3', 'blocks_item-dark');
+      this.addCssClassName('.blocks_item4', 'blocks_item-dark');
+
+      this.addCssClassName('.blocks_item5', 'blocks_item-dark');
+      this.addCssClassName('.blocks_item6', 'blocks_item-dark');
+      this.addCssClassName('.blocks_item7', 'blocks_item-dark');
 
       localStorage.setItem('themeMode', 'dark');
     } else {
@@ -225,8 +252,35 @@ export class NavComponent implements OnInit {
         dariaSmall.src = '../../assets/daria.png';
       }
 
+      const laptop = document.querySelector(
+        '.laptop'
+      ) as HTMLImageElement | null;
+      if (laptop != null) {
+        laptop.src = '../../assets/laptop.png';
+      }
+      const laptopSmall = document.querySelector(
+        '.laptop-small'
+      ) as HTMLImageElement | null;
+      if (laptopSmall != null) {
+        laptopSmall.src = '../../assets/laptop.png';
+      }
+
       this.removeCssClassName('.left', 'left-dark-large');
       this.removeCssClassName('.left', 'left-dark-small');
+
+      this.removeCssClassName('.buttonik1', 'buttonik1-dark');
+      this.removeCssClassName('.buttonik2', 'buttonik2-dark');
+
+      this.removeCssClassName('.contact-pair', 'contact-pair-dark');
+
+      this.removeCssClassName('.blocks_item1', 'blocks_item-dark');
+      this.removeCssClassName('.blocks_item2', 'blocks_item-dark');
+      this.removeCssClassName('.blocks_item3', 'blocks_item-dark');
+      this.removeCssClassName('.blocks_item4', 'blocks_item-dark');
+
+      this.removeCssClassName('.blocks_item5', 'blocks_item-dark');
+      this.removeCssClassName('.blocks_item6', 'blocks_item-dark');
+      this.removeCssClassName('.blocks_item7', 'blocks_item-dark');
 
       localStorage.setItem('themeMode', 'light');
     }

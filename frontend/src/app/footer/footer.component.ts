@@ -54,8 +54,8 @@ export class FooterComponent implements OnInit {
   }
 
   messageForm = new FormGroup({
+    name: new FormControl('Imie'),
     topic: new FormControl('Temat'),
-    phone: new FormControl('Numer telefonu'),
     email: new FormControl('Adres e-mail'),
     message: new FormControl('Wiadomość'),
   });
