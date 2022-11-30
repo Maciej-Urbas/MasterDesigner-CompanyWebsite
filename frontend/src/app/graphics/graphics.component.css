@@ -22,13 +22,13 @@ main {
   justify-content: center;
   align-items: center;
 
-  width: clamp(min(148.551px), 57.135vw, max(1097px));
-  height: clamp(min(45.5px), 17.5vw, max(336px));
+  width: clamp(min(106.843px), 57.135vw, max(1097px));
+  height: clamp(min(34.5px), 17.5vw, max(336px));
 
   margin-top: 8vw;
 
   font-family: "Titillium Web", sans-serif;
-  font-size: clamp(min(13px), 5vw, max(96px));
+  font-size: clamp(min(10.8px), 5vw, max(96px));
   text-align: center;
 
   border: solid black 2px;

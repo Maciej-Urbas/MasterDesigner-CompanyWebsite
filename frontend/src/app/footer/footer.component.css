@@ -74,7 +74,7 @@ footer {
   margin-top: -2vw;
 
   width: clamp(min(240px), 47.864vw, max(919px));
-  height: clamp(min(258.541px), 51.562vw, max(990px));
+  height: clamp(min(176.541px), 51.562vw, max(990px));
 }
 .right-title {
   font-size: clamp(min(26px), 5vw, max(96px)) !important;
@@ -96,7 +96,7 @@ footer {
 }
 .right-messageForm_small {
   width: 100%;
-  height: clamp(min(20px), 4.791vw, max(92px));
+  height: clamp(min(16px), 4.791vw, max(92px));
 
   margin-top: 2vw;
   padding-left: 1vw;
@@ -113,7 +113,7 @@ footer {
 }
 .right-messageForm_large {
   width: 100%;
-  height: clamp(min(77.173px), 18.489vw, max(355px));
+  height: clamp(min(62px), 18.489vw, max(355px));
 
   margin-top: 2vw;
   padding-left: 1vw;
@@ -152,7 +152,7 @@ footer {
     justify-content: space-around;
 
     width: 100%;
-    height: clamp(min(113.388px), 43.611vw, max(338.422px));
+    height: clamp(min(80px), 43.611vw, max(338.422px));
 
     margin-top: clamp(min(2px), 10.824vw, max(84px));
 
@@ -161,7 +161,7 @@ footer {
     background-image: url("data:image/svg+xml,%3Csvg width='337' height='158' viewBox='0 0 337 158' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M334 70L334 92C334 126.794 305.794 155 271 155V155' stroke='%2378BA9E' stroke-opacity='0.4' stroke-width='5'/%3E%3Crect x='11' y='10' width='315' height='135' fill='%2307070D' fill-opacity='0.3'/%3E%3Cpath d='M3 88V66C3 31.2061 31.2061 3 66 3V3' stroke='%2378BA9E' stroke-opacity='0.4' stroke-width='5'/%3E%3C/svg%3E%0A");
   }
   .left-description {
-    font-size: clamp(min(10px), 4.123vw, max(32px));
+    font-size: clamp(min(7.8px), 4.123vw, max(32px));
     width: 47vw;
 
     padding: 0;
@@ -190,29 +190,12 @@ footer {
     margin-bottom: 2vw;
   }
 
-  /* Margines dla "Wizytowki", bo narazie nie mam innego pomyslu */
-  @media screen and (min-width: 420px) and (max-width: 460px) {
-    .left {
-      margin-top: max(26px);
-    }
-  }
-  @media screen and (min-width: 370px) and (max-width: 419px) {
-    .left {
-      margin-top: 12px;
-    }
-  }
-  @media screen and (min-width: 2px) and (max-width: 369px) {
-    .left {
-      margin-top: -2px;
-    }
-  }
-
   .right-title {
-    font-size: clamp(min(16px), 5.555vw, max(46px)) !important;
+    font-size: clamp(min(11px), 5.555vw, max(46px)) !important;
     margin-top: -1vw;
   }
   .right-messageForm {
-    font-size: clamp(min(12px), 2.577vw, max(20px));
+    font-size: clamp(min(7.8px), 2.577vw, max(20px));
   }
   .right-messageForm_small {
     margin-top: 3vw;
@@ -225,10 +208,10 @@ footer {
     align-items: center;
     justify-content: center;
 
-    width: clamp(min(90px), 24.6vw, max(190.896px));
-    height: clamp(min(28.287px), 7.731vw, max(60px));
+    width: clamp(min(64px), 24.6vw, max(190.896px));
+    height: clamp(min(24.287px), 7.731vw, max(60px));
 
-    font-size: clamp(min(14px), 4.188vw, max(32.5px));
+    font-size: clamp(min(11px), 4.188vw, max(32.5px));
     padding-top: -2vw;
 
     margin-top: 3vw;

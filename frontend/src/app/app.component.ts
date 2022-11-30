@@ -58,6 +58,10 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
+    if (localStorage.getItem('themeMode') == null) {
+      localStorage.setItem('themeMode', 'light');
+    }
+
     const r = document.querySelector(':root');
     const switchCheckbox = document.querySelector(
       '.nav-content-switch_checkbox'
@@ -77,35 +81,6 @@ export class AppComponent {
       if (switchCheckbox != null) {
         switchCheckbox.checked = false;
       }
-
-      // this.swapCssProperty(
-      //   '--darkBackgroundOne',
-      //   this.getCssPropertyValue('--lightBackgroundOne')
-      // );
-      // this.swapCssProperty(
-      //   '--darkBackgroundTwo',
-      //   this.getCssPropertyValue('--lightBackgroundTwo')
-      // );
-
-      // this.swapCssProperty(
-      //   '--blackTextColor',
-      //   this.getCssPropertyValue('--lightTextColor')
-      // );
-
-      // this.swapCssProperty(
-      //   '--darkSwitchBulb',
-      //   this.getCssPropertyValue('--lightSwitchBulb')
-      // );
-
-      // this.swapCssProperty(
-      //   '--darkNavLogo',
-      //   this.getCssPropertyValue('--lightNavLogo')
-      // );
-
-      // this.swapCssProperty(
-      //   '--darkNavMenuButton',
-      //   this.getCssPropertyValue('--lightNavMenuButton')
-      // );
     }
   }
 

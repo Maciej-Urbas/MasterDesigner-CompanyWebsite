@@ -36,7 +36,7 @@ nav {
 
   align-items: baseline;
 
-  margin-top: 3vw;
+  margin-top: 4vw;
 
   padding-right: 6vw;
   padding-left: 6vw;
@@ -56,8 +56,8 @@ nav {
   transition: 0.4s;
 }
 .nav-content-button_button {
-  width: clamp(min(25px), 8.281vw, max(155px));
-  height: clamp(min(12px), 4.27vw, max(89px));
+  width: clamp(min(14.905px), 8.281vw, max(155px));
+  height: clamp(min(8px), 4.27vw, max(89px));
 
   border: none;
 
@@ -84,7 +84,7 @@ nav {
   display: flex;
   align-self: center;
 
-  font-size: clamp(min(20px), 6.666vw, max(128px));
+  font-size: clamp(min(14px), 6.666vw, max(128px));
   font-family: "Judson", serif;
 }
 
@@ -103,12 +103,12 @@ nav {
 
   margin-right: 2vw;
 
-  width: clamp(min(24px), 7.812vw, max(150px));
-  height: clamp(min(12px), 4.166vw, max(80px));
+  width: clamp(min(12px), 7.812vw, max(150px));
+  height: clamp(min(6px), 4.166vw, max(80px));
 }
 .nav-content-switch_checkbox {
-  width: clamp(min(24px), 7.812vw, max(150px));
-  height: clamp(min(12px), 4.166vw, max(80px));
+  width: clamp(min(12px), 7.812vw, max(150px));
+  height: clamp(min(6px), 4.166vw, max(80px));
 
   margin: 0;
 
@@ -120,8 +120,8 @@ nav {
   position: absolute;
   top: 0.833vw;
 
-  width: clamp(min(24px), 7.812vw, max(150px));
-  height: clamp(min(7.2px), 2.499vw, max(48px));
+  width: clamp(min(12px), 7.812vw, max(150px));
+  height: clamp(min(6px), 2.499vw, max(48px));
 
   margin: 0;
 
@@ -136,8 +136,8 @@ nav {
   top: -0.833vw;
 
   content: "";
-  height: clamp(min(12px), 4.166vw, max(80px));
-  width: clamp(min(12px), 4.166vw, max(80px));
+  height: clamp(min(9px), 4.166vw, max(80px));
+  width: clamp(min(9px), 4.166vw, max(80px));
 
   margin: 0;
 
@@ -178,22 +178,22 @@ nav {
 }
 .nav-logo-active {
   position: relative;
+  bottom: clamp(min(24px), 9.2vw, max(176.64px));
 
-  width: clamp(min(120px), 94.791vw, max(1820px));
-  height: clamp(min(100px), 30.208vw, max(580px));
+  width: clamp(min(110px), 94.791vw, max(1820px));
+  height: clamp(min(56px), 30.208vw, max(580px));
 
   align-self: start;
 
   margin-left: 2vw;
-  margin-top: -8.6vw;
-  margin-bottom: clamp(min(1px), 12.5vw, max(620px));
+  margin-bottom: clamp(min(1px), 6vw, max(620px));
 
   box-shadow: none;
   border: solid clamp(min(2px), 0.52vw, max(10px)) #78ba9e;
 }
 .nav-logo_logo {
-  width: clamp(min(48px), 15.847vw, max(304.28px));
-  height: clamp(min(46.68px), 15.625vw, max(300px));
+  width: clamp(min(30px), 15.847vw, max(304.28px));
+  height: clamp(min(28.68px), 15.625vw, max(300px));
 
   transition: 0.4s;
 
@@ -220,7 +220,7 @@ nav {
   color: #ffffff;
 
   font-family: "Titillium Web", sans-serif;
-  font-size: clamp(min(13.125px), 4.375vw, max(84px));
+  font-size: clamp(min(9px), 4.375vw, max(84px));
 }
 .nav-logo-ankars-arrow {
   display: flex;
@@ -247,15 +247,15 @@ nav {
   flex-direction: column;
 
   position: absolute;
-  top: 9vw;
-  left: 9.291vw;
+  top: clamp(min(23px), 9vw, max(156px));
+  left: 9.58vw;
   align-self: flex-end;
 
   padding-top: 2vw;
   padding-left: 3vw;
 
   width: 83vw;
-  height: clamp(min(100px), 32.291vw, max(620px));
+  height: clamp(min(66px), 32.6vw, max(630px));
   background-color: #323232;
 }
 
@@ -264,7 +264,7 @@ nav {
 }
 .nav-logo-offer-items {
   position: absolute;
-  top: clamp(min(44px), 15.6vw, max(291.84px));
+  top: clamp(min(31px), 15.6vw, max(291.84px));
   left: 100vw;
 
   width: 0;
@@ -281,10 +281,10 @@ nav {
   line-height: 1.15;
   padding: 0.6vw 0vw 0.6vw 2.6vw;
 
-  font-size: clamp(min(9px), 2.916vw, max(56px));
+  font-size: clamp(min(7px), 2.916vw, max(56px));
 
   width: 90%;
-  height: clamp(min(30px), 10vw, max(192px));
+  height: clamp(min(20px), 10vw, max(192px));
   border-radius: 3vw 0vw 0vw 3vw;
   background-color: rgba(217, 217, 217, 0.25);
 
@@ -315,7 +315,7 @@ nav {
 }
 .nav-logo-ankars_item3-active2 {
   /* margin-top: -2.6vw; */
-  margin-top: 12vw;
+  margin-top: clamp(min(24px), 12vw, max(230.4px));
 }
 
 .nav-content-button_button-dark {

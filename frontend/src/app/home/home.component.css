@@ -105,7 +105,7 @@ main {
     background-image: url("data:image/svg+xml,%3Csvg width='609' height='552' viewBox='0 0 609 552' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='586' y='23' width='506' height='563' transform='rotate(90 586 23)' fill='black' fill-opacity='0.3'/%3E%3Cpath d='M606 409L606 2.99999L325 3' stroke='%2378BA9E' stroke-width='6'/%3E%3Cpath d='M3 143L3 549L284 549' stroke='%2378BA9E' stroke-width='6'/%3E%3C/svg%3E%0A");
   }
   .frame_text {
-    font-size: clamp(min(9px), 3.608vw, max(28px));
+    font-size: clamp(min(6.52px), 3.608vw, max(28px));
 
     margin-top: 3vw;
     padding: 0vw 8vw;
@@ -138,10 +138,10 @@ main {
     margin-top: -2vw;
   }
   .up-container_title {
-    font-size: clamp(min(16px), 5.555vw, max(46px));
+    font-size: clamp(min(11px), 5.555vw, max(46px));
   }
   .up-container_description {
-    font-size: clamp(min(9px), 3.608vw, max(28px));
+    font-size: clamp(min(7.8px), 3.608vw, max(28px));
 
     margin-top: 4vw;
   }
@@ -165,7 +165,7 @@ main {
     margin-top: 6vw;
   }
   .down-container_description {
-    font-size: clamp(min(9px), 3.608vw, max(28px));
+    font-size: clamp(min(7.8px), 3.608vw, max(28px));
 
     padding: 0;
 

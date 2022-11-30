@@ -13,7 +13,7 @@
 }
 
 .title {
-  font-size: clamp(min(15.625px), 5.208vw, max(100px));
+  font-size: clamp(min(12.8px), 5.208vw, max(100px));
   font-family: "Titillium Web", sans-serif;
 
   margin-top: 4vw;

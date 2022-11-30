@@ -14,13 +14,13 @@
   justify-content: center;
   align-items: center;
 
-  width: clamp(min(194.864px), 74.947vw, max(1439px));
+  width: clamp(min(135px), 74.947vw, max(1439px));
   height: clamp(min(39.27px), 15.104vw, max(290px));
 
   margin-top: 8vw;
 
   font-family: "Titillium Web", sans-serif;
-  font-size: clamp(min(13px), 5vw, max(96px));
+  font-size: clamp(min(10.8px), 5vw, max(96px));
   text-align: center;
 
   border: solid black 2px;
@@ -34,8 +34,8 @@
   display: flex;
   justify-content: center;
 
-  width: clamp(min(230.479px), 88.645vw, max(1702px));
-  height: clamp(min(117.541px), 45.208vw, max(868px));
+  width: clamp(min(159.561px), 88.645vw, max(1702px));
+  height: clamp(min(81.374px), 45.208vw, max(868px));
 
   margin-top: 8vw;
   margin-bottom: -8vw;

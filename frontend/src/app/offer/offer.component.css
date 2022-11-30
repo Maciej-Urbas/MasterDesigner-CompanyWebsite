@@ -10,6 +10,8 @@
   align-items: center;
   justify-content: space-between;
 
+  /* height: min(120px); */
+
   margin-top: 8vw;
 }
 
@@ -28,12 +30,12 @@
 }
 
 .lower-title {
-  font-size: clamp(min(24px), 3.333vw, max(64px));
+  font-size: clamp(min(11px), 3.333vw, max(64px));
 }
 
 .paragraph {
   text-align: center;
-  font-size: clamp(min(12px), 2.083vw, max(40px));
+  font-size: clamp(min(7.8px), 2.083vw, max(40px));
 
   margin-top: 2vw;
 }
@@ -51,7 +53,7 @@
 
   text-decoration: none;
   color: black;
-  font-size: clamp(min(12px), 3.333vw, max(64px));
+  font-size: clamp(min(7.8px), 3.333vw, max(64px));
 
   border: solid clamp(min(2px), 0.26vw, max(5px));
 }
@@ -85,33 +87,33 @@
     width: 100vw;
     text-align: center;
 
-    font-size: clamp(min(16px), 4.649vw, max(36px));
+    font-size: clamp(min(11px), 4.649vw, max(36px));
   }
 
   .content {
     margin-right: 0;
-    height: 60vw;
+    height: clamp(min(138px), 60vw, max(465.6px));
   }
 
   .content-smallDogo {
     margin-top: 4vw;
     margin-bottom: 2vw;
-    height: 78vw;
+    height: clamp(min(181.4px), 78vw, max(605.28px));
   }
 
   .paragraph {
     text-align: center;
-    font-size: clamp(min(10px), 3.608vw, max(28px));
+    font-size: clamp(min(8px), 3.608vw, max(28px));
     width: 100vw;
 
     margin-top: 3vw;
   }
 
   .buttonik {
-    width: clamp(min(114.4px), 44vw, max(341.44px));
-    height: clamp(min(24.123px), 9.278vw, max(72px));
+    width: clamp(min(94.4px), 44vw, max(341.44px));
+    height: clamp(min(20.123px), 9.278vw, max(72px));
 
-    font-size: clamp(min(12px), 4.649vw, max(36px));
+    font-size: clamp(min(8px), 4.649vw, max(36px));
   }
 
   .laptop {
