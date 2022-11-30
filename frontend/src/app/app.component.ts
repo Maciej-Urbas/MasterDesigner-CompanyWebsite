@@ -6,7 +6,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'frontend';
+  title = 'MasterDesigner';
 
   key = 'themeMode';
 
@@ -32,8 +32,6 @@ export class AppComponent {
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    const windowWidth = window.innerWidth;
-    console.log(windowWidth);
     if (localStorage.getItem('themeMode') == 'dark') {
       if (document.querySelector('.left') != null) {
         if (window.innerWidth > 776) {
@@ -62,22 +60,17 @@ export class AppComponent {
       localStorage.setItem('themeMode', 'light');
     }
 
-    const r = document.querySelector(':root');
     const switchCheckbox = document.querySelector(
       '.nav-content-switch_checkbox'
     ) as HTMLInputElement | null;
 
     if (localStorage.getItem('themeMode') == 'dark') {
-      console.log('darkMode');
-
       if (switchCheckbox != null) {
         switchCheckbox.checked = true;
       }
 
       this.addCssClassName('.line-up', 'line-up-dark');
     } else {
-      console.log('lightMode');
-
       if (switchCheckbox != null) {
         switchCheckbox.checked = false;
       }
