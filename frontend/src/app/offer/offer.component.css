@@ -92,13 +92,13 @@
 
   .content {
     margin-right: 0;
-    height: clamp(min(138px), 60vw, max(465.6px));
+    height: clamp(min(134px), 60vw, max(465.6px));
   }
 
   .content-smallDogo {
     margin-top: 4vw;
     margin-bottom: 2vw;
-    height: clamp(min(181.4px), 78vw, max(605.28px));
+    height: clamp(min(190px), 78vw, max(605.28px));
   }
 
   .paragraph {
@@ -110,10 +110,10 @@
   }
 
   .buttonik {
-    width: clamp(min(94.4px), 44vw, max(341.44px));
-    height: clamp(min(20.123px), 9.278vw, max(72px));
+    width: clamp(min(80px), 44vw, max(341.44px));
+    height: clamp(min(10px), 9.278vw, max(72px));
 
-    font-size: clamp(min(8px), 4.649vw, max(36px));
+    font-size: clamp(min(7.8px), 4.649vw, max(36px));
   }
 
   .laptop {

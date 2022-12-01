@@ -113,7 +113,7 @@ footer {
 }
 .right-messageForm_large {
   width: 100%;
-  height: clamp(min(62px), 18.489vw, max(355px));
+  height: clamp(min(62px), 16.6vw, max(304px));
 
   margin-top: 2vw;
   padding-left: 1vw;
@@ -161,7 +161,7 @@ footer {
     background-image: url("data:image/svg+xml,%3Csvg width='337' height='158' viewBox='0 0 337 158' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M334 70L334 92C334 126.794 305.794 155 271 155V155' stroke='%2378BA9E' stroke-opacity='0.4' stroke-width='5'/%3E%3Crect x='11' y='10' width='315' height='135' fill='%2307070D' fill-opacity='0.3'/%3E%3Cpath d='M3 88V66C3 31.2061 31.2061 3 66 3V3' stroke='%2378BA9E' stroke-opacity='0.4' stroke-width='5'/%3E%3C/svg%3E%0A");
   }
   .left-description {
-    font-size: clamp(min(7.8px), 4.123vw, max(32px));
+    font-size: clamp(min(7.59px), 4.123vw, max(32px));
     width: 47vw;
 
     padding: 0;
@@ -185,7 +185,7 @@ footer {
     margin-top: -5.6vw;
   }
   .left-signature {
-    font-size: clamp(min(7px), 2.835vw, max(22px));
+    font-size: clamp(min(6px), 2.835vw, max(22px));
 
     margin-bottom: 2vw;
   }

@@ -10,7 +10,7 @@ main {
   justify-content: center;
 
   width: clamp(min(198.927px), 76.51vw, max(1469px));
-  height: clamp(min(67.302px), 25.885vw, max(497px));
+  height: clamp(min(65.302px), 25.885vw, max(497px));
 
   margin: auto;
   margin-top: 3vw;
@@ -24,7 +24,7 @@ main {
   font-size: clamp(min(12px), 2.083vw, max(40px));
 
   margin-top: 1vw;
-  padding: 0vw 4vw;
+  padding: 4.8vw 4vw 4vw;
 }
 
 .line-home {
@@ -100,15 +100,17 @@ main {
 @media screen and (min-width: 2px) and (max-width: 776px) {
   .frame {
     width: 81.056vw;
-    height: 72.938vw;
+    height: clamp(min(140px), 76vw, max(566.49px));
 
+    background-size: contain;
     background-image: url("data:image/svg+xml,%3Csvg width='609' height='552' viewBox='0 0 609 552' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='586' y='23' width='506' height='563' transform='rotate(90 586 23)' fill='black' fill-opacity='0.3'/%3E%3Cpath d='M606 409L606 2.99999L325 3' stroke='%2378BA9E' stroke-width='6'/%3E%3Cpath d='M3 143L3 549L284 549' stroke='%2378BA9E' stroke-width='6'/%3E%3C/svg%3E%0A");
   }
   .frame_text {
-    font-size: clamp(min(6.52px), 3.608vw, max(28px));
+    font-size: clamp(min(6.4px), 3.608vw, max(28px));
+    line-height: 1.46;
 
     margin-top: 3vw;
-    padding: 0vw 8vw;
+    padding: 2vw 8vw 4vw;
   }
 
   .line-home {
