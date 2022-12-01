@@ -111,6 +111,13 @@ footer {
   outline: none;
   background: none;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
 .right-messageForm_large {
   width: 100%;
   height: clamp(min(62px), 16.6vw, max(304px));
