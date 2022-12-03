@@ -84,7 +84,7 @@ nav {
   display: flex;
   align-self: center;
 
-  font-size: clamp(min(14px), 6.666vw, max(128px));
+  font-size: clamp(min(12px), 6.666vw, max(128px));
   font-family: "Judson", serif;
 }
 
@@ -103,12 +103,12 @@ nav {
 
   margin-right: 2vw;
 
-  width: clamp(min(12px), 7.812vw, max(150px));
-  height: clamp(min(6px), 4.166vw, max(80px));
+  width: clamp(min(11px), 7.812vw, max(150px));
+  height: clamp(min(5px), 4.166vw, max(80px));
 }
 .nav-content-switch_checkbox {
-  width: clamp(min(12px), 7.812vw, max(150px));
-  height: clamp(min(6px), 4.166vw, max(80px));
+  width: clamp(min(11px), 7.812vw, max(150px));
+  height: clamp(min(5px), 4.166vw, max(80px));
 
   margin: 0;
 
@@ -120,8 +120,8 @@ nav {
   position: absolute;
   top: 0.833vw;
 
-  width: clamp(min(12px), 7.812vw, max(150px));
-  height: clamp(min(6px), 2.499vw, max(48px));
+  width: clamp(min(11px), 7.812vw, max(150px));
+  height: clamp(min(5px), 2.499vw, max(48px));
 
   margin: 0;
 
@@ -136,8 +136,8 @@ nav {
   top: -0.833vw;
 
   content: "";
-  height: clamp(min(9px), 4.166vw, max(80px));
-  width: clamp(min(9px), 4.166vw, max(80px));
+  height: clamp(min(8px), 4.166vw, max(80px));
+  width: clamp(min(8px), 4.166vw, max(80px));
 
   margin: 0;
 
