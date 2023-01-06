@@ -57,14 +57,14 @@
 
   .line {
     width: 86vw;
-    height: clamp(min(2px), 0.515vw, max(4px));
+    height: clamp(min(1px), 0.515vw, max(4px));
 
     margin: auto;
     margin-top: 1vw;
   }
   .line-up {
     width: 86vw;
-    height: clamp(min(2px), 0.515vw, max(4px));
+    height: clamp(min(1px), 0.515vw, max(4px));
 
     margin: auto;
     margin-top: 1vw;

@@ -22,4 +22,38 @@ export class ContactComponent implements OnInit {
       }
     }
   }
+
+  scrollToContact() {
+    const scrollingHeight = document.querySelector('footer');
+    let scrollingHeightValue = 0;
+
+    if (scrollingHeight != undefined) {
+      scrollingHeightValue =
+        scrollingHeight?.clientHeight + scrollingHeight?.clientHeight;
+    }
+
+    if (window.innerWidth > 776) {
+      let pomoc = 1920 - window.innerWidth;
+      scrollingHeightValue = scrollingHeightValue - 370;
+      scrollingHeightValue = scrollingHeightValue + pomoc / 4;
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: scrollingHeightValue,
+          behavior: 'smooth',
+        });
+      }, 100);
+    } else {
+      let pomoc = 776 - window.innerWidth;
+      scrollingHeightValue = scrollingHeightValue - 1060;
+      scrollingHeightValue = scrollingHeightValue + pomoc * 1.4;
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: scrollingHeightValue,
+          behavior: 'smooth',
+        });
+      }, 100);
+    }
+  }
 }
