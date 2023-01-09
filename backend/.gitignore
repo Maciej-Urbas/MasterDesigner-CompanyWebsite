@@ -1,6 +1,0 @@
-obj/*
-bin/*
-
-!obj/Debug/net6.0/backend.assets.cache
-!obj/Debug/net6.0/backend.csproj.AssemblyReference.cache
-!obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig

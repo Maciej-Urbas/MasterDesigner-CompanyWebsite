@@ -84,7 +84,7 @@ nav {
   display: flex;
   align-self: center;
 
-  font-size: clamp(min(12px), 6.666vw, max(128px));
+  font-size: clamp(min(16.4px), 6.666vw, max(128px));
   font-family: "Judson", serif;
 }
 

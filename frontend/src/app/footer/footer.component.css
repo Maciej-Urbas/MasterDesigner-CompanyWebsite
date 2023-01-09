@@ -6,7 +6,7 @@ footer {
   padding: 0;
   padding-bottom: 9vw;
 
-  margin-top: 4.2vw;
+  margin-top: 5.4vw;
 
   display: flex;
   flex-direction: column;
@@ -198,11 +198,11 @@ input[data-autocompleted] {
   }
 
   .right-title {
-    font-size: clamp(min(11px), 5.555vw, max(46px)) !important;
+    font-size: clamp(min(16px), 5.555vw, max(46px)) !important;
     margin-top: -1vw;
   }
   .right-messageForm {
-    font-size: clamp(min(7.8px), 2.577vw, max(20px));
+    font-size: clamp(min(11px), 2.577vw, max(20px));
   }
   .right-messageForm_small {
     margin-top: 3vw;
@@ -218,7 +218,7 @@ input[data-autocompleted] {
     width: clamp(min(64px), 24.6vw, max(190.896px));
     height: clamp(min(24.287px), 7.731vw, max(60px));
 
-    font-size: clamp(min(11px), 4.188vw, max(32.5px));
+    font-size: clamp(min(13px), 4.188vw, max(32.5px));
     padding-top: -2vw;
 
     margin-top: 3vw;
