@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,13 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-  constructor() {}
+  constructor(private httpClient: HttpClient) {}
+
+  ipAddress = '';
 
   ngOnInit(): void {
+    this.getIPAddress();
+
     if (localStorage.getItem('themeMode') == 'dark') {
       if (document.querySelector('.left') != null) {
         if (window.innerWidth > 776) {
@@ -57,10 +62,45 @@ export class FooterComponent implements OnInit {
     name: new FormControl('Imie'),
     topic: new FormControl('Temat'),
     email: new FormControl('Adres e-mail'),
-    message: new FormControl('Wiadomość'),
+    content: new FormControl('Wiadomość'),
+    ipAddress: new FormControl(''),
+    state: new FormControl(),
   });
 
+  getIPAddress() {
+    this.httpClient.get('https://jsonip.com').subscribe(
+      (value: any) => {
+        // console.log(value);
+        this.ipAddress = value.ip;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
+
   onSubmit() {
-    console.log('asd');
+    this.messageForm.controls.ipAddress.setValue(this.ipAddress);
+    this.messageForm.controls.state.setValue(0);
+    let messageFormObj = this.messageForm.getRawValue();
+
+    // Zmiana danych w obiekt JSON
+    let serializedMessageFormObj = JSON.stringify(messageFormObj);
+    alert(serializedMessageFormObj);
+
+    fetch('http://localhost:5281/api/mdMessages', {
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: serializedMessageFormObj,
+    })
+      .then((response) => response.json())
+      .then((messageFormObj) => {
+        console.log('Success:', messageFormObj);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
   }
 }

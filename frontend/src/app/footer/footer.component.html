@@ -19,7 +19,7 @@
 
       <form
         class="right-messageForm"
-        formGroupName="messageForm"
+        [formGroup]="messageForm"
         (ngSubmit)="onSubmit()"
       >
         <input
@@ -50,7 +50,7 @@
           class="right-messageForm_large"
           maxlength="500"
           placeholder="Wiadomość"
-          formControl="message"
+          formControlName="content"
         ></textarea>
 
         <button class="right-messageForm_submit" type="submit">Wyślij</button>
