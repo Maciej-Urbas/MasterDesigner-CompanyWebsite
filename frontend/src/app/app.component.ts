@@ -8,8 +8,6 @@ import { Component, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'MasterDesigner';
 
-  key = 'themeMode';
-
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll() {
     let navlogoHeightValue;
@@ -58,6 +56,9 @@ export class AppComponent {
   ngOnInit(): void {
     if (localStorage.getItem('themeMode') == null) {
       localStorage.setItem('themeMode', 'light');
+    }
+    if (localStorage.getItem('token') == null) {
+      localStorage.setItem('token', 'aaaa');
     }
 
     const switchCheckbox = document.querySelector(

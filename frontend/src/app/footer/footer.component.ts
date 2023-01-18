@@ -59,10 +59,10 @@ export class FooterComponent implements OnInit {
   }
 
   messageForm = new FormGroup({
-    name: new FormControl('Imie'),
-    topic: new FormControl('Temat'),
-    email: new FormControl('Adres e-mail'),
-    content: new FormControl('Wiadomość'),
+    name: new FormControl(''),
+    topic: new FormControl(''),
+    email: new FormControl(''),
+    content: new FormControl(''),
     ipAddress: new FormControl(''),
     state: new FormControl(),
   });
@@ -79,16 +79,15 @@ export class FooterComponent implements OnInit {
     );
   }
 
-  onSubmit() {
+  async onSubmit() {
     this.messageForm.controls.ipAddress.setValue(this.ipAddress);
     this.messageForm.controls.state.setValue(0);
     let messageFormObj = this.messageForm.getRawValue();
 
     // Zmiana danych w obiekt JSON
     let serializedMessageFormObj = JSON.stringify(messageFormObj);
-    alert(serializedMessageFormObj);
 
-    fetch('http://localhost:5281/api/mdMessages', {
+    await fetch('http://localhost:5281/api/mdMessages', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',

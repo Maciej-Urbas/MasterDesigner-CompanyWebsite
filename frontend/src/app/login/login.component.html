@@ -1,1 +1,17 @@
-<div class="login">asd</div>
+<div class="login">
+  <form class="loginForm" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <input
+      class="right-loginForm_small right-loginForm_small1"
+      type="text"
+      placeholder="Login"
+      formControlName="login"
+    />
+    <input
+      class="right-loginForm_small right-loginForm_small2"
+      type="password"
+      placeholder="Hasło"
+      formControlName="password"
+    />
+    <button class="right-loginForm_submit" type="submit">Zaloguj</button>
+  </form>
+</div>

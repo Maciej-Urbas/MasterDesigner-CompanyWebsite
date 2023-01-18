@@ -1,11 +1,104 @@
 .login {
-  position: fixed;
-  top: 0;
-  left: 0;
+  width: 80%;
+  position: relative;
 
-  z-index: 1000;
-  background-color: blueviolet;
+  margin: auto;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: clamp(min(16px), 2.083vw, max(40px));
 
   width: 100%;
-  height: 100vh;
+}
+.right-loginForm_small {
+  width: 100%;
+  height: clamp(min(16px), 4.791vw, max(92px));
+
+  margin-top: 2vw;
+  padding-left: 1vw;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+  overflow-x: scroll;
+
+  border: solid clamp(min(2px), 0.156vw, max(3px));
+  outline: none;
+  background: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+.right-loginForm_submit {
+  width: clamp(min(120px), 16.77vw, max(322px));
+  height: clamp(min(42.118px), 5.885vw, max(113px));
+
+  font-family: "Titillium Web", sans-serif;
+  font-size: clamp(min(26px), 3.385vw, max(65px));
+
+  margin-top: 2vw;
+
+  border: solid clamp(min(2px), 0.156vw, max(3px));
+  background: none;
+}
+
+@media screen and (min-width: 2px) and (max-width: 776px) {
+  .right-loginForm {
+    font-size: clamp(min(11px), 2.577vw, max(20px));
+  }
+  .right-loginForm_small {
+    margin-top: 3vw;
+  }
+  .right-loginForm_submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: clamp(min(64px), 24.6vw, max(190.896px));
+    height: clamp(min(24.287px), 7.731vw, max(60px));
+
+    font-size: clamp(min(13px), 4.188vw, max(32.5px));
+    padding-top: -2vw;
+
+    margin-top: 3vw;
+
+    border: solid clamp(min(2px), 0.156vw, max(3px));
+    background: none;
+  }
+}
+
+.right-loginForm_small1-dark {
+  border-color: white;
+  color: white;
+}
+.right-loginForm_small2-dark {
+  border-color: white;
+  color: white;
+}
+.right-loginForm_small3-dark {
+  border-color: white;
+  color: white;
+}
+
+.right-loginForm_submit-dark {
+  border-color: white;
+  color: white;
 }
